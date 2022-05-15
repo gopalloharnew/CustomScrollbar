@@ -1,0 +1,56 @@
+.custom-scroll-container {
+  width: 75vw;
+  height: 75vh;
+  max-width: 1000px;
+  max-height: 500px;
+  background-color: hsl(220, 20%, 20%);
+  position: relative;
+}
+
+.scrolling-card-wraper {
+  width: calc(100% - 16px);
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 16px;
+}
+
+.scrolling-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.custom-scrollbar-track {
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.custom-scrollbar-handle {
+  width: 100%;
+  height: 20%;
+  background-color: hsla(220, 80%, 80%, 0.3);
+  transition: opacity 250ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.custom-scrollbar-handle:hover {
+  background-color: hsla(220, 80%, 80%, 0.4);
+}
+
+.custom-scrollbar-handle:active {
+  background-color: hsla(220, 80%, 80%, 0.6);
+}

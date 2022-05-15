@@ -1,0 +1,19 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(220, 10%, 10%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrolling-card-wraper::-webkit-scrollbar {
+  width: 16px;
+}
+
+.scrolling-card-wraper::-webkit-scrollbar-thumb {
+  background-color: hsla(220, 20%, 50%, 0.5);
+}
