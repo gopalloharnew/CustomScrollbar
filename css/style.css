@@ -11,9 +11,10 @@ body {
 }
 
 .scrolling-card-wraper::-webkit-scrollbar {
-  width: 16px;
+  width: 0px;
 }
 
-.scrolling-card-wraper::-webkit-scrollbar-thumb {
-  background-color: hsla(220, 20%, 50%, 0.5);
+.scrolling-card-wraper {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
 }
